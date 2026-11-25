@@ -20,3 +20,5 @@
 - `GLOSSARY.md` at the root is the canonical vocabulary (it doubles as the repo's domain glossary). Use its terms in lessons.
 - Phase 2 is split: 0002 = EVF/exposure simulation + IBIS; 0003 = subject-detection AF + high ISO. Then phase 3 (buying).
 - `assets/evf-sim.js` is a reusable viewfinder simulator (`data-scene="snow"` exposure task, `"cabin"` white balance task). New scenes can be added in `makeScene`.
+- **Review queue after LR-0003**: (1) metering bright scenes, needs a quiz retrieval, so far only practised in the simulator; (2) exposure simulation on/off behaviour (missed in 0002); (3) handheld speed × crop, sunny 16 and white balance direction, now recovered: one light check later (spacing), not every lesson.
+- Phase 4 setup checklist must include: exposure simulation ON.

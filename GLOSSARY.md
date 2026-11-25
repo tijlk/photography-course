@@ -20,11 +20,23 @@ _Avoid_: ASA, film speed, gain
 A graph of the image's tones from dark (left) to bright (right). Data piled against an edge means detail clipped to pure black or pure white.
 _Avoid_: levels graph
 
+**White balance**:
+The camera setting, in kelvin, that removes the colour cast of the light. Light lower in kelvin than the setting looks warmer (orange); light higher in kelvin looks cooler (blue).
+_Avoid_: colour correction, WB (fine in notes)
+
 ## Focus and sharpness
 
 **Depth of field**:
 The distance between the nearest and farthest points that look acceptably sharp. It increases with a higher f-number, greater subject distance or a shorter focal length.
 _Avoid_: DoF (fine in notes, spell out in lessons), focus range
+
+**35mm-equivalent focal length**:
+Focal length × crop factor: the full-frame focal length that gives the same field of view. The handheld rule uses this number.
+_Avoid_: effective focal length, "crop focal length"
+
+**In-body image stabilisation (IBIS)**:
+Moving the sensor to counter camera shake. It's rated in stops of slower handheld shutter speed and does nothing for a moving subject.
+_Avoid_: IS (reserve for lens-based stabilisation), VR, OSS (brand names)
 
 ## Files
 
