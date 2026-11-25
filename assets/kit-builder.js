@@ -12,9 +12,9 @@
   body:  { id, name, sensor: "APS-C"|"FF", crop, weight (g, with battery), ibis, slots, notes, src }
   lens:  { id, name, mount: "RF"|"RF-S"|"EF-S", minF, maxF, aperture, weight (g), owned, notes, src }
   extra: { id, name, weight (g or null), needs: "EF-S" }   (added automatically when needed)
-
-  Prices are typed by the learner (no figures are invented here) and kept in
-  this browser's localStorage when available.
+  Any item may carry { price, priceSrc, priceNote }: a cited price used as the
+  starting value. The learner can overwrite it; their own prices and budget are
+  kept in this browser's localStorage when available. No figures are invented here.
 */
 (function () {
   "use strict";
@@ -50,6 +50,14 @@
       budget: saved.budget != null ? saved.budget : null  // typed by the learner, never stored in the page
     };
     function save() { store(key, state); }
+    var allItems = data.bodies.concat(data.lenses, data.extras || []);
+    allItems.forEach(function (it) {
+      if (it.price != null && state.prices[it.id] == null) state.prices[it.id] = it.price;
+    });
+    function priceNote(it) {
+      if (it.price == null) return it.priceNote ? " · " + (it.priceSrc ? '<a href="' + it.priceSrc + '">price note</a>: ' : "") + it.priceNote : "";
+      return " · " + cur + it.price.toLocaleString() + (it.priceSrc ? ' <a href="' + it.priceSrc + '">lowest on Tweakers</a>' : "") + (it.priceNote ? " " + it.priceNote : "");
+    }
 
     root.innerHTML = "";
     var budgetRow = el("p", "kb-budget");
@@ -96,7 +104,7 @@
       row.appendChild(lab);
       row.appendChild(priceInput(b.id, b.name));
       row.appendChild(el("p", "kb-meta", fmtKg(b.weight) + " with battery · IBIS " + b.ibis + " · " + b.slots +
-        (b.notes ? " · " + b.notes : "") + (b.src ? ' · <a href="' + b.src + '">source</a>' : "")));
+        (b.notes ? " · " + b.notes : "") + (b.src ? ' · <a href="' + b.src + '">specs</a>' : "") + priceNote(b)));
       bodyBox.appendChild(row);
     });
 
@@ -144,7 +152,7 @@
         }
         if (l.mount === "EF-S") note += " · needs EF-EOS R adapter";
         txt = l.minF + (l.minF === l.maxF ? "" : "–" + l.maxF) + "mm " + l.aperture + " · ≈ " + equiv(l, effCrop) +
-          " equivalent · " + l.weight + " g" + note + (l.notes ? " · " + l.notes : "") + (l.src ? ' · <a href="' + l.src + '">source</a>' : "");
+          " equivalent · " + l.weight + " g" + note + (l.notes ? " · " + l.notes : "") + (l.src ? ' · <a href="' + l.src + '">specs</a>' : "") + priceNote(l);
         r.meta.innerHTML = txt;
         r.check.checked = !!state.lenses[id];
         r.hike.checked = !!state.hike[id];
@@ -200,7 +208,7 @@
         (missing.length ? '<br><span class="kb-hint">No price yet for: ' + missing.join(", ") + "</span>" : "") + "</dd>";
       html += "</dl>";
       if (needsAdapter && adapter) {
-        html += '<p class="kb-hint">Adapter: ' + adapter.name + ' <span id="kb-adapter-slot"></span></p>';
+        html += '<p class="kb-hint">Adapter: ' + adapter.name + ' <span id="kb-adapter-slot"></span>' + priceNote(adapter) + '</p>';
       }
       if (warnings.length) html += '<ul class="kb-warn"><li>' + warnings.join("</li><li>") + "</li></ul>";
       out.innerHTML = html;

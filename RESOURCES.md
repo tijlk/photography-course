@@ -15,6 +15,11 @@
 - [Wikipedia: Canon EF-S 17–55mm lens](https://en.wikipedia.org/wiki/Canon_EF-S_17%E2%80%9355mm_lens)
   Use for: the lens the user still owns (27–88mm equivalent on APS-C).
 
+- [Tweakers Pricewatch](https://tweakers.net/pricewatch/)
+  Dutch price-comparison site with current euro offers per product. Use for: dated euro prices of bodies and lenses (lowest offer).
+- Wikipedia camera and lens articles (e.g. [Canon RF mount](https://en.wikipedia.org/wiki/Canon_RF_mount), [Canon EOS R7](https://en.wikipedia.org/wiki/Canon_EOS_R7))
+  Use for: spec tables (sensor, IBIS, slots, weight). Cross-check against the manufacturer's manual for anything decisive.
+
 ## Wisdom (Communities)
 
 - The user has opted out of communities. Don't propose them.
@@ -22,6 +27,5 @@
 ## Gaps
 
 - Camera tech since 2013 (mirrorless, EVF, subject-detection AF, IBIS, high-ISO performance): need manufacturer white papers and reputable reviews (e.g. DPReview) for lesson 0002.
-- Canon RF mount ↔ EF-S adapter compatibility: needs Canon's own documentation.
 - Lightroom mobile free vs paid features: needs Adobe's help pages.
 - Night-sky and wildlife guidance for Rocky Mountain parks: NPS pages.
