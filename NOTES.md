@@ -25,3 +25,5 @@
 - Lesson 0003 (AF + high ISO) included review questions on metering and exposure simulation. Phase 2 is done after 0003; next is phase 3, choosing a camera (needs current models, prices and EF-S adapter compatibility from manufacturer sources, cited).
 - **Review queue after LR-0004**: empty. Do one light spaced check of metering, exposure simulation and handheld speed × crop during phase 4 camera setup.
 - Before phase 3, ask the user: budget, brand openness, how much keeping the EF-S 17-55 matters, and weight/size limits.
+- The user asked for a big-picture "what changed since 2013" overview (lesson 0004) after the focused lessons. Lesson: give an overview *before* deep dives when the learner is re-entering a field. Lesson 0004's checklist is the basis for phase 3 shortlisting.
+- `.change` cards in `course.css` (what changed / for you / check) are reusable for comparison-style lessons.

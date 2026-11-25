@@ -214,3 +214,31 @@ th {
   h2, h3 { break-after: avoid; }
   table, .callout { break-inside: avoid; }
 }
+
+/* ---- "Change" cards: what changed / what it means / what to check ---- */
+.change {
+  border-top: 1px solid var(--rule);
+  padding: 1rem 0 0.4rem;
+}
+.change h3 { margin-top: 0; }
+.change dl {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.35rem 0.9rem;
+  margin: 0.4rem 0 0.6rem;
+}
+.change dt {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 0.25rem;
+}
+.change dd { margin: 0; min-width: 0; }
+.change dd.check { color: var(--accent); }
+@media (max-width: 30rem) {
+  .change dl { grid-template-columns: 1fr; gap: 0.1rem; }
+  .change dd { margin-bottom: 0.5rem; }
+}
+@media print { .change { break-inside: avoid; } }
