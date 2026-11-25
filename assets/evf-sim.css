@@ -1,0 +1,78 @@
+/* Styles for assets/evf-sim.js. Builds on the tokens in course.css. */
+
+.evf-sim {
+  margin: 1.4rem 0 2rem;
+  padding: 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.evf-toolbar { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.7rem; }
+.evf-mode {
+  font: inherit;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+}
+.evf-mode.is-on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.evf-mode:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.evf-frame { position: relative; }
+.evf-frame canvas {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 320 / 200;
+  border-radius: 4px;
+  image-rendering: auto;
+  background: #000;
+}
+.evf-badge {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+}
+
+.evf-hist {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 48px;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+}
+
+.evf-controls { margin-top: 0.8rem; }
+.evf-controls label { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); }
+.evf-controls output { font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600; }
+.evf-controls input[type="range"] { width: 100%; accent-color: var(--accent); margin-top: 0.4rem; }
+
+.evf-status {
+  margin: 0.8rem 0 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  background: var(--bg);
+  font-family: var(--serif);
+  font-size: 0.92rem;
+}
+.evf-status.good { background: var(--good-soft); }
+.evf-status.bad { background: var(--bad-soft); }
+
+@media print {
+  .evf-sim { break-inside: avoid; }
+  .evf-controls, .evf-toolbar { display: none; }
+}

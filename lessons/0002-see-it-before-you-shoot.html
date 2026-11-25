@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0002 · See it before you shoot</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="../assets/evf-sim.css">
+<link rel="stylesheet" href="../assets/quiz.css">
+</head>
+<body>
+<main>
+
+<nav class="crumbs"><a href="../index.html">Photography course</a> · Lesson 0002</nav>
+
+<h1>See it before you shoot</h1>
+<p class="subtitle">Mirrorless viewfinders and in-body stabilisation, the two changes that fix what the self-check caught.</p>
+
+<div class="meta">
+  <span>About 15 minutes</span>
+  <span>Phase 2 of 5 · Camera tech since 2013</span>
+  <span>Builds on <a href="0001-basics-self-check.html">lesson 0001</a></span>
+</div>
+
+<p>Your self-check misses had a theme: the camera's automatic guesses (metering, white balance) and the rules of thumb for correcting them. On a 30D you found those mistakes on the rear screen, after the shot. Two technologies that became standard after you stopped change that. This lesson covers both, and the next one covers autofocus and high ISO.</p>
+
+<h2>1 · The viewfinder now shows the photo</h2>
+
+<p>A DSLR shows you the scene through a mirror. In a <strong>mirrorless</strong> camera there's no mirror: the lens always shines light onto the sensor, and the camera shows the sensor's picture on a screen.<sup class="cite"><a href="#s1">1</a></sup> Put that screen behind an eyepiece and you have an <strong>electronic viewfinder (EVF)</strong>, which can show a preview of how the photo will actually look, something an optical finder can't do.<sup class="cite"><a href="#s2">2</a></sup></p>
+
+<p>Two settings matter most for you:</p>
+<ul>
+  <li><strong>Exposure simulation.</strong> With it on, the viewfinder brightness is close to the brightness of the final photo, and it changes when you set exposure compensation.<sup class="cite"><a href="#s3">3</a></sup> In auto or semi-auto modes, that shows you whether the meter has been fooled.<sup class="cite"><a href="#s4">4</a></sup></li>
+  <li><strong>White balance preview.</strong> The viewfinder shows the effect of the current white balance setting, whether it's auto, a preset or custom.<sup class="cite"><a href="#s4">4</a></sup></li>
+</ul>
+<p>The trade-offs: an EVF can lag a little, especially with long exposures, and its screen has less dynamic range than your eye looking through an optical finder.<sup class="cite"><a href="#s2">2</a></sup></p>
+
+<h3>Try it: the snowfield</h3>
+<p>A bright snowfield, metered automatically. First tap <em>Optical finder (30D)</em> and move the slider: nothing changes. Then switch back and fix the photo <strong>before</strong> taking it. Aim for white snow, with the histogram not piled against the right edge.</p>
+<div class="evf-sim" data-scene="snow"></div>
+
+<h3>Try it: the cabin</h3>
+<p>Evening inside a cabin lit by old-style incandescent bulbs. The camera's white balance is set for daylight. Make the grey card neutral.</p>
+<div class="evf-sim" data-scene="cabin"></div>
+
+<p class="meta">These are simplified simulations for building intuition, not colour-accurate renderings of any camera.</p>
+
+<h2>2 · Stabilisation moved into the body</h2>
+
+<p>Your 17-55 has stabilisation in the lens. <strong>In-body image stabilisation (IBIS)</strong> instead moves the sensor itself to counter camera shake.<sup class="cite"><a href="#s5">5</a></sup> A body can stabilise lenses that have none of their own, including older lenses and other makers' lenses. Some bodies need you to enter the focal length for a lens that can't report it, which doesn't work well for zooms.<sup class="cite"><a href="#s5">5</a></sup></p>
+
+<p>How to use the number on the spec sheet:</p>
+<ol>
+  <li>Start from the handheld rule, using the <strong>35mm-equivalent</strong> focal length: slowest speed ≈ 1/(equivalent focal length).<sup class="cite"><a href="#s5">5</a></sup> This is exactly the crop-factor step from lesson 0001.</li>
+  <li>Each stop of stabilisation doubles the time you can hold. Stabilisation typically allows 2 to 5.5 stops slower.<sup class="cite"><a href="#s5">5</a></sup> Manufacturers measure this under a standard test from CIPA, the camera industry body (DC-011, revised in 2024), so treat the figure as a lab result, not a promise.<sup class="cite"><a href="#s6">6</a></sup></li>
+</ol>
+
+<div class="callout">
+  <span class="label">The catch</span>
+  <p>Stabilisation only reduces blur from small movements of your hands. It does nothing about a <em>moving subject</em>.<sup class="cite"><a href="#s5">5</a></sup> It helps landscapes at dusk, but a walking elk or a running child still needs a fast shutter speed.</p>
+</div>
+
+<h2>3 · Check yourself</h2>
+<p>Six questions. Three are new, and three revisit lesson 0001's misses with different numbers.</p>
+
+<div class="quiz" data-quiz="quiz-data" data-lesson="0002"></div>
+<script type="application/json" id="quiz-data">
+[
+  {
+    "topic": "Stabilisation",
+    "q": "Your 17-55 at <strong>55mm</strong> on a 1.6× crop body (88mm equivalent), with in-body stabilisation rated at <strong>4 stops</strong>. A still mountain view at dusk: what's the slowest handheld speed under the rule plus stabilisation?",
+    "options": ["About 1/25 s", "About 1/6 s", "About 1/400 s", "About 1/100 s"],
+    "answer": 1,
+    "explain": "Start at about 1/100 s (closest to 1/88), then double the time four times: 1/50 → 1/25 → 1/13 → 1/6 s. It's a lab figure, so bracing yourself or taking a couple of frames is still wise. <a href=\"#s5\">[5]</a> <a href=\"#s6\">[6]</a>"
+  },
+  {
+    "topic": "Stabilisation limits",
+    "q": "Dusk, an elk walking across a meadow. Stabilisation would let you handhold <strong>1/6 s</strong>. Is that a good shutter speed for this shot?",
+    "options": ["Yes, stabilisation freezes it", "No, the elk blurs", "Yes, if ISO drops", "No, the background blurs"],
+    "answer": 1,
+    "explain": "Stabilisation reduces blur from your hands, not from the subject moving. The background stays sharp and the walking elk smears. For moving wildlife, choose a fast shutter speed and accept a higher ISO. <a href=\"#s5\">[5]</a>"
+  },
+  {
+    "topic": "Handheld speed (review)",
+    "q": "<strong>No stabilisation at all.</strong> 30mm on a 1.6× crop body. What's the slowest handheld speed under the classic rule?",
+    "options": ["About 1/30 s", "About 1/15 s", "About 1/100 s", "About 1/50 s"],
+    "answer": 3,
+    "explain": "The rule uses the 35mm-equivalent focal length: 30 × 1.6 = 48mm, so about 1/50 s. Picking 1/30 s is the classic trap of forgetting the crop factor. <a href=\"#s5\">[5]</a>"
+  },
+  {
+    "topic": "EVF settings",
+    "q": "On a Canon EOS R6 with <strong>exposure simulation disabled</strong>, you dial in −1 EV. The viewfinder image…",
+    "options": ["Darkens one full stop", "Brightens one full stop", "Brightness stays the same", "Turns black and white"],
+    "answer": 2,
+    "explain": "With exposure simulation disabled, the image stays at standard brightness so it's easy to see, even when you set exposure compensation. Leave it on if you want the viewfinder to warn you about a bad exposure. <a href=\"#s3\">[3]</a>"
+  },
+  {
+    "topic": "Sunny 16 (review)",
+    "q": "Bright sun, <strong>ISO 400</strong>, f/16, and your meter is acting up. What shutter speed does the sunny 16 rule give?",
+    "options": ["About 1/400 s", "About 1/100 s", "About 1/1600 s", "About 1/50 s"],
+    "answer": 0,
+    "explain": "In direct sun at f/16, the shutter speed is 1/ISO: 1/400 s, or 1/500 s if that's the nearest setting. <a href=\"#s7\">[7]</a>"
+  },
+  {
+    "topic": "White balance (review)",
+    "q": "Sunset light is about <strong>1,850 K</strong>. You leave white balance at <strong>5,500 K</strong> (daylight). The photo will look…",
+    "options": ["Cool and bluish overall", "Perfectly neutral and grey", "Green with magenta shadows", "Warm, keeping the glow"],
+    "answer": 3,
+    "explain": "The light is much lower in kelvin than the setting, so the warm orange cast stays in. That's often what you want at sunset. Matching the setting to the light, as in the cabin, removes the cast. <a href=\"#s8\">[8]</a>"
+  }
+]
+</script>
+
+<h2>What this means for buying</h2>
+<p>When you compare cameras in phase 3, check two things: whether the camera has <strong>IBIS</strong> and how many stops it's rated (and whether that figure is for the body alone or for a particular lens), and whether the EVF offers <strong>exposure simulation</strong>. Most mirrorless bodies do, but check the manual. Both are now on the <a href="../reference/modern-camera-tech.html">Modern camera tech</a> reference sheet.</p>
+
+<div class="callout">
+  <span class="label">Primary source</span>
+  <p><a href="https://www.fujifilm-x.com/en-us/stories/intermediate-month-2-exposure-and-light-5-previewing-exposure/">Fujifilm: What You See Is What You Get!</a> is a short manufacturer guide to everything a mirrorless viewfinder can preview, including exposure, white balance and depth of field, and when to turn the preview off.</p>
+</div>
+
+<div class="callout">
+  <span class="label">Ask me</span>
+  <p>Anything unclear, or curious how a specific camera does this? Ask me in the chat. When you're done, paste me the quiz result line, and say whether the two simulator tasks took one try or several.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://en.wikipedia.org/wiki/Mirrorless_camera">Wikipedia: Mirrorless camera</a>: the lens always shines light onto the sensor; the picture is shown on a screen.</li>
+  <li id="s2"><a href="https://en.wikipedia.org/wiki/Electronic_viewfinder">Wikipedia: Electronic viewfinder</a>: an exact preview, which an optical finder can't give; possible lag; dynamic-range limits.</li>
+  <li id="s3"><a href="https://cam.start.canon/en/C004/manual/html/UG-03_Shooting-1_0350.html">Canon EOS R6 manual: Exposure Simulation</a>: Enable / During / Disable behaviour.</li>
+  <li id="s4"><a href="https://www.fujifilm-x.com/en-us/stories/intermediate-month-2-exposure-and-light-5-previewing-exposure/">Fujifilm: What You See Is What You Get!</a>: EVF previews exposure, exposure compensation and white balance.</li>
+  <li id="s5"><a href="https://en.wikipedia.org/wiki/Image_stabilization">Wikipedia: Image stabilization</a>: IBIS moves the sensor; the 1/mm rule uses 35mm-equivalent focal length; 2 to 5.5 stops; doesn't stop subject motion.</li>
+  <li id="s6"><a href="https://www.cipa.jp/e/std/std-sec.html">CIPA standards: DC-011-2024</a>: measurement and description method for image stabilisation performance.</li>
+  <li id="s7"><a href="https://en.wikipedia.org/wiki/Sunny_16_rule">Wikipedia: Sunny 16 rule</a>: ISO 400 at f/16 gives 1/400 or 1/500 s.</li>
+  <li id="s8"><a href="https://en.wikipedia.org/wiki/Color_temperature">Wikipedia: Color temperature</a>: sunset about 1,850 K; daylight about 5,500–6,500 K.</li>
+</ol>
+
+<nav class="lesson-nav">
+  <a href="0001-basics-self-check.html">← 0001 · Basics self-check</a>
+  <span class="planned">Next: 0003 · Autofocus and high ISO (coming)</span>
+</nav>
+
+</main>
+<script src="../assets/evf-sim.js" defer></script>
+<script src="../assets/quiz.js" defer></script>
+</body>
+</html>
