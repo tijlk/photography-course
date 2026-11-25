@@ -22,3 +22,4 @@
 - `assets/evf-sim.js` is a reusable viewfinder simulator (`data-scene="snow"` exposure task, `"cabin"` white balance task). New scenes can be added in `makeScene`.
 - **Review queue after LR-0003**: (1) metering bright scenes, needs a quiz retrieval, so far only practised in the simulator; (2) exposure simulation on/off behaviour (missed in 0002); (3) handheld speed × crop, sunny 16 and white balance direction, now recovered: one light check later (spacing), not every lesson.
 - Phase 4 setup checklist must include: exposure simulation ON.
+- Lesson 0003 (AF + high ISO) included review questions on metering and exposure simulation. Phase 2 is done after 0003; next is phase 3, choosing a camera (needs current models, prices and EF-S adapter compatibility from manufacturer sources, cited).
