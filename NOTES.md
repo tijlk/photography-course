@@ -28,3 +28,6 @@
 - The user asked for a big-picture "what changed since 2013" overview (lesson 0004) after the focused lessons. Lesson: give an overview *before* deep dives when the learner is re-entering a field. Lesson 0004's checklist is the basis for phase 3 shortlisting.
 - `.change` cards in `course.css` (what changed / for you / check) are reusable for comparison-style lessons.
 - After LR-0005: phase 2 done. Phase 3 is blocked on the four user answers (budget, brand openness, 17-55 importance, size/weight). Mention "no AF calibration needed" once during phase 4, when testing the adapted 17-55.
+- Phase 3 constraints are in the conversation, not here: the budget is personal and stays out of this public repo (the kit builder has a learner-entered budget box). Recorded here: leans Canon but calls it irrational; keeps the 17-55 only if it makes financial sense; at most two lenses on a hike, never ~3 kg of lenses.
+- Lesson 0005 frames the choice as APS-C + 17-55 (path A) vs full frame with new lenses (path B); brand is only open on path B. `assets/kit-builder.js` takes learner-typed prices and budget (no invented figures). Waiting for the user's two kits.
+- Euro prices: no allowed source yet. Adding price-comparison hosts was rejected by the environments service; the user can add them in the environment settings.
