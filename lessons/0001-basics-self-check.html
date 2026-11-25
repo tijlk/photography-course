@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0001 · Basics self-check</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="../assets/quiz.css">
+</head>
+<body>
+<main>
+
+<nav class="crumbs"><a href="../index.html">Photography course</a> · Lesson 0001</nav>
+
+<h1>Basics self-check</h1>
+<p class="subtitle">What's still in your fingers after twelve years away?</p>
+
+<div class="meta">
+  <span>About 10 minutes</span>
+  <span>Phase 1 of 5 · Fundamentals</span>
+  <span>Answer from memory, no peeking</span>
+</div>
+
+<p>You shot a 30D for a decade. Most of what you knew still holds: light, lenses and exposure maths haven't changed since 2013. What <em>has</em> changed is the camera around them, which is lesson 0002. Before we get there, this check shows which fundamentals are solid and which have faded, so later lessons skip what you know and cover what you don't.</p>
+
+<p>Every question ties back to the trip: bright peaks, wildlife at the edge of the light, family at camp, stars after dark.</p>
+
+<div class="callout">
+  <span class="label">How to take it</span>
+  <p>Answer each question from memory before you look anything up. Struggling to recall is what makes knowledge stick, and a wrong answer now is useful data, not a failure. Each question locks after one click and shows why, with a source.</p>
+</div>
+
+<div class="quiz" data-quiz="quiz-data" data-lesson="0001"></div>
+
+<script type="application/json" id="quiz-data">
+[
+  {
+    "topic": "Stops",
+    "q": "You open up from <strong>f/8</strong> to <strong>f/5.6</strong> and change nothing else. The sensor now receives…",
+    "options": ["Twice as much light", "Half as much light", "Four times more light", "Exactly the same light"],
+    "answer": 0,
+    "explain": "f/5.6 is one full stop wider than f/8 in the standard f-stop scale (f/1, 1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22…), and one stop is a doubling or halving of exposure. <a href=\"#s1\">[1]</a> <a href=\"#s2\">[2]</a>"
+  },
+  {
+    "topic": "Reciprocity",
+    "q": "Your meter says <strong>1/250 s at f/8, ISO 200</strong>. You open up to <strong>f/4</strong> to blur the background behind a family portrait and keep ISO the same. Which shutter speed keeps the same exposure?",
+    "options": ["1/60 s", "1/125 s", "1/1000 s", "1/500 s"],
+    "answer": 2,
+    "explain": "f/8 → f/5.6 → f/4 is two stops more light, so the shutter must give two stops less: 1/250 → 1/500 → 1/1000 s. Equal exposure means trading stop for stop between settings. <a href=\"#s1\">[1]</a> <a href=\"#s2\">[2]</a>"
+  },
+  {
+    "topic": "ISO trade-off",
+    "q": "Raising ISO lets you shoot in less light, which you'll do for stars and dusk wildlife. What's the main price you pay?",
+    "options": ["Shallower depth of field", "More visible image noise", "Stronger motion blur risk", "Warmer overall colour cast"],
+    "answer": 1,
+    "explain": "Each doubling of ISO halves the light the camera needs, but higher ISO means more noise, the digital version of film grain. How much noise modern sensors show at high ISO is one of the big changes since 2013, coming in lesson 0002. <a href=\"#s3\">[3]</a>"
+  },
+  {
+    "topic": "Depth of field",
+    "q": "You're at <strong>35mm, f/5.6</strong>, three metres from a subject. Which <em>single</em> change gives <strong>more</strong> depth of field?",
+    "options": ["Zoom in to 55mm", "Open up to f/2.8", "Move closer to subject", "Step back from subject"],
+    "answer": 3,
+    "explain": "Depth of field grows with subject distance and with f-number, and shrinks with longer focal length or a wider aperture. Of these four, only stepping back increases it. <a href=\"#s4\">[4]</a>"
+  },
+  {
+    "topic": "Handheld speed",
+    "q": "On the 30D (APS-C, 1.6× crop) at <strong>55mm</strong>, ignoring the lens's image stabilisation, what's the slowest handheld shutter speed under the classic rule of thumb?",
+    "options": ["About 1/25 s", "About 1/50 s", "About 1/100 s", "About 1/200 s"],
+    "answer": 2,
+    "explain": "The film-era rule says use a shutter speed close to the focal length, but it assumes 35mm film. Multiply by the crop factor first: 55 × 1.6 = 88mm equivalent, so about 1/100 s. 1/50 s is the trap: it forgets the crop. Stabilisation lets you go slower, and that matters a lot for modern cameras. <a href=\"#s5\">[5]</a> <a href=\"#s6\">[6]</a> <a href=\"#s7\">[7]</a>"
+  },
+  {
+    "topic": "Metering",
+    "q": "A bright snowfield, shot on automatic exposure, comes out a dull grey. What fixes it?",
+    "options": ["Dial in plus compensation", "Dial in minus compensation", "Raise the ISO setting", "Use a faster shutter"],
+    "answer": 0,
+    "explain": "Meters assume the scene averages out to middle grey (about 18% reflectance), so they darken a bright scene toward grey. Positive exposure compensation (for example +1 to +2 EV) brings the white back. <a href=\"#s8\">[8]</a> <a href=\"#s9\">[9]</a>"
+  },
+  {
+    "topic": "Histogram",
+    "q": "After a shot of a bright sky over the peaks, the histogram is piled up hard against its <strong>right</strong> edge. What does that most likely mean?",
+    "options": ["White balance is off", "Shadows lost to black", "Focus missed the subject", "Highlights lost to white"],
+    "answer": 3,
+    "explain": "The histogram runs from dark on the left, through midtones, to bright on the right. A pile-up at the right edge means tones pushed to pure white, with highlight detail lost. <a href=\"#s10\">[10]</a>"
+  },
+  {
+    "topic": "White balance",
+    "q": "Inside a cabin lit by old-style incandescent bulbs, white balance is set to <strong>Daylight</strong>. The photos look…",
+    "options": ["Too blue and cool", "Too orange and warm", "Too green and flat", "Neutral and fully correct"],
+    "answer": 1,
+    "explain": "Incandescent lamps are about 2,400 K and daylight about 5,500–6,500 K. Lower colour temperature looks warmer and more orange, so a Daylight setting leaves the orange cast in. <a href=\"#s11\">[11]</a>"
+  },
+  {
+    "topic": "RAW vs JPEG",
+    "q": "For the trip's best shots, what's the biggest practical reason to shoot RAW?",
+    "options": ["White balance fixable later", "Files are much smaller", "Burst shooting gets faster", "Colours look better unedited"],
+    "answer": 0,
+    "explain": "A RAW file stores the in-camera settings without applying them, so white balance and the other settings can be redone later. It also keeps 12–14 bits per channel against JPEG's 8, which gives much more room to recover highlights and shadows. The trade-offs are bigger files and needing to edit, which suits your plan to edit after the trip. <a href=\"#s12\">[12]</a>"
+  },
+  {
+    "topic": "Sunny 16",
+    "q": "Your meter is acting up. Bright sun, <strong>ISO 100</strong>, <strong>f/16</strong>. The sunny 16 rule says the shutter speed should be…",
+    "options": ["About 1/25 s", "About 1/400 s", "About 1/100 s", "About 1/1600 s"],
+    "answer": 2,
+    "explain": "In direct sun at f/16, set the shutter to the reciprocal of the ISO: 1/100 s at ISO 100, or 1/125 s if that's the nearest setting. It's a useful sanity check on any meter. <a href=\"#s13\">[13]</a>"
+  }
+]
+</script>
+
+<h2>After the quiz</h2>
+<p>Copy the result line and paste it to me. It tells me how much basics review lesson 0002 needs before moving on to what's changed since 2013: mirrorless, electronic viewfinders, subject-detection autofocus, in-body stabilisation and high-ISO performance.</p>
+<p>Want a refresher on anything you missed? The <a href="../reference/exposure-basics.html">Exposure basics</a> reference sheet has every fact from this quiz on one printable page.</p>
+
+<div class="callout">
+  <span class="label">Primary source</span>
+  <p><a href="https://www.cambridgeincolour.com/tutorials/camera-exposure.htm">Cambridge in Colour: Camera Exposure</a> is a clear, illustrated refresher on aperture, shutter speed and ISO, and links to its depth-of-field and metering tutorials. Read it if two or more questions tripped you up.</p>
+</div>
+
+<div class="callout">
+  <span class="label">Ask me</span>
+  <p>I'm your teacher for this course. If an explanation doesn't land, or you want to argue with an answer, ask me follow-up questions in the chat.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://en.wikipedia.org/wiki/F-number">Wikipedia: F-number</a>: standard f-stop scale; each step is one stop.</li>
+  <li id="s2"><a href="https://en.wikipedia.org/wiki/Exposure_value">Wikipedia: Exposure value</a>: one stop = half or double the exposure.</li>
+  <li id="s3"><a href="https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/understanding-iso-sensitivity">Nikon USA: Understanding ISO Sensitivity</a>: doubling ISO halves the light needed; higher ISO adds noise.</li>
+  <li id="s4"><a href="https://en.wikipedia.org/wiki/Depth_of_field">Wikipedia: Depth of field</a>: factors affecting DoF.</li>
+  <li id="s5"><a href="https://en.wikipedia.org/wiki/Shutter_speed">Wikipedia: Shutter speed</a>: handheld rule of thumb (shutter speed ≈ focal length on 35mm).</li>
+  <li id="s6"><a href="https://en.wikipedia.org/wiki/Crop_factor">Wikipedia: Crop factor</a>: multiplying focal length by the crop factor gives the 35mm-equivalent field of view.</li>
+  <li id="s7"><a href="https://en.wikipedia.org/wiki/Canon_EOS_30D">Wikipedia: Canon EOS 30D</a>: 1.6 angle-of-view crop.</li>
+  <li id="s8"><a href="https://en.wikipedia.org/wiki/Middle_gray">Wikipedia: Middle gray</a>: 18% reflectance; meters assume an average scene.</li>
+  <li id="s9"><a href="https://en.wikipedia.org/wiki/Exposure_compensation">Wikipedia: Exposure compensation</a>: positive compensation; snowy mountains at +2 EV example.</li>
+  <li id="s10"><a href="https://en.wikipedia.org/wiki/Image_histogram">Wikipedia: Image histogram</a>: left = dark, right = light.</li>
+  <li id="s11"><a href="https://en.wikipedia.org/wiki/Color_temperature">Wikipedia: Color temperature</a>: table of light sources in kelvin; white balance presets.</li>
+  <li id="s12"><a href="https://en.wikipedia.org/wiki/Raw_image_format">Wikipedia: Raw image format</a>: settings saved but processing deferred; 12- or 14-bit data.</li>
+  <li id="s13"><a href="https://en.wikipedia.org/wiki/Sunny_16_rule">Wikipedia: Sunny 16 rule</a>: f/16 at 1/ISO in direct sun.</li>
+</ol>
+
+<nav class="lesson-nav">
+  <a href="../index.html">← Course home</a>
+  <span class="planned">Next: 0002 · What changed since 2013 (coming)</span>
+</nav>
+
+</main>
+<script src="../assets/quiz.js" defer></script>
+</body>
+</html>
