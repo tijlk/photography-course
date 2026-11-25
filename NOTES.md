@@ -27,3 +27,4 @@
 - Before phase 3, ask the user: budget, brand openness, how much keeping the EF-S 17-55 matters, and weight/size limits.
 - The user asked for a big-picture "what changed since 2013" overview (lesson 0004) after the focused lessons. Lesson: give an overview *before* deep dives when the learner is re-entering a field. Lesson 0004's checklist is the basis for phase 3 shortlisting.
 - `.change` cards in `course.css` (what changed / for you / check) are reusable for comparison-style lessons.
+- After LR-0005: phase 2 done. Phase 3 is blocked on the four user answers (budget, brand openness, 17-55 importance, size/weight). Mention "no AF calibration needed" once during phase 4, when testing the adapted 17-55.
