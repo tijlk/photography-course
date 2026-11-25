@@ -18,8 +18,10 @@
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
+/* Dark theme: follows the OS unless the viewer explicitly chose light;
+   an explicit dark choice (data-theme) also wins. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #161614;
     --fg: #e8e6dc;
     --muted: #a19f94;
@@ -31,7 +33,22 @@
     --bad: #e79a92;
     --bad-soft: #321c1a;
     --card: #1e1e1b;
+    color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #161614;
+  --fg: #e8e6dc;
+  --muted: #a19f94;
+  --rule: #34332d;
+  --accent: #e0a96d;
+  --accent-soft: #2c2418;
+  --good: #8cc79a;
+  --good-soft: #1c2b1f;
+  --bad: #e79a92;
+  --bad-soft: #321c1a;
+  --card: #1e1e1b;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -49,7 +66,9 @@ body {
 main, .page {
   max-width: 40rem;
   margin: 0 auto;
-  padding: 2.5rem 16px 4rem;
+  padding-block: 2.5rem 4rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 
 /* ---- Top bar --------------------------------------------------------- */
