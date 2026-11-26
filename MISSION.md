@@ -11,7 +11,7 @@ Come home with great photos from a family camper trip through the American Rocky
 - Can edit the best shots afterwards in the free Lightroom mobile app, upgrading only if its limits actually bite.
 
 ## Constraints
-- Background: ~10 years (2003–2013) on a Canon EOS 30D + EF-S 17-55mm; still owns the 17-55, no camera yet.
+- Background: ~10 years (2003–2013) on a Canon EOS 30D + EF-S 17-55mm. Camera chosen in Nov 2026: Canon EOS R6 Mark II + RF 24-105 f/4L + RF 100-400 (see learning record 0007).
 - Sequence: (1) basics self-check, (2) camera tech changes since 2013 (mirrorless, EVF, subject-detection AF, IBIS, high ISO), (3) buy a camera, (4) camera-specific lessons, (5) editing + subject lessons.
 - Rhythm: 1–2 short sessions per week.
 - On the trip: no editing and no backups; several memory cards, never wiped during the trip. A travel tripod is possible, not certain.
