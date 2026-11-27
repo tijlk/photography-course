@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0003 · Autofocus and high ISO</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="../assets/quiz.css">
+</head>
+<body>
+<main>
+
+<nav class="crumbs"><a href="../index.html">Photography course</a> · Lesson 0003</nav>
+
+<h1>Autofocus and high ISO</h1>
+<p class="subtitle">A camera that finds the eye, and what an ISO spec does and doesn't tell you.</p>
+
+<div class="meta">
+  <span>About 12 minutes</span>
+  <span>Phase 2 of 5 · Camera tech since 2013</span>
+  <span>Builds on <a href="0002-see-it-before-you-shoot.html">lesson 0002</a></span>
+</div>
+
+<p>This is the last "what changed" lesson before we choose a camera. It covers the two changes that matter most for wildlife at dusk, family on the move and stars after dark.</p>
+
+<h2>1 · Autofocus that finds the subject</h2>
+
+<p>Your 30D had <strong>9 AF points</strong>, and you chose between One-Shot and AI Servo.<sup class="cite"><a href="#s1">1</a></sup> You picked a point and kept it on the subject yourself.</p>
+
+<p>A modern mirrorless camera can find the subject for you. Using the Canon EOS R6 manual as an example:</p>
+<ul>
+  <li><strong>Face + Tracking:</strong> the camera detects the faces of people or animals and tracks them. If no face is found, it chooses a focus point across the whole frame by itself.<sup class="cite"><a href="#s2">2</a></sup></li>
+  <li><strong>Subject to detect:</strong> choose <em>People</em>, <em>Animals</em> or <em>Vehicles</em>. On the R6, "animals" means <strong>dogs, cats and birds</strong>.<sup class="cite"><a href="#s2">2</a></sup> Other animals aren't promised, so an elk may or may not be recognised. Check this for any camera you consider.</li>
+  <li><strong>Eye detection:</strong> focuses on the eye of a person or animal. The manual warns that eyes may not always be detected, depending on the subject and conditions.<sup class="cite"><a href="#s2">2</a></sup></li>
+  <li><strong>Servo AF</strong> keeps focusing while you half-press, for moving subjects. <strong>One-Shot AF</strong> focuses once and locks, for still subjects.<sup class="cite"><a href="#s3">3</a></sup> These are the same ideas as the 30D's AI Servo and One-Shot.</li>
+</ul>
+
+<div class="callout">
+  <span class="label">Where autofocus still struggles</span>
+  <p>The manual lists low light, low contrast (such as plain blue sky), and night scenes or points of light as hard conditions.<sup class="cite"><a href="#s2">2</a></sup> For stars, plan to focus manually, using the magnified view.</p>
+</div>
+
+<h2>2 · High ISO: read the spec carefully</h2>
+
+<p>On paper the change is huge. The 30D went up to ISO 3200.<sup class="cite"><a href="#s1">1</a></sup> The R6's normal range is ISO 100–102400, expandable to the equivalent of 204800. Canon warns that the expanded setting adds noise and loses resolution.<sup class="cite"><a href="#s4">4</a></sup></p>
+
+<p>But the <em>top</em> of the range says little about how clean ISO 3200 or 6400 looks. The biggest factor in noise is <strong>how much light the whole sensor collects</strong>. At the same f-number, a larger sensor collects more light, so it shows less noise.<sup class="cite"><a href="#s5">5</a></sup></p>
+
+<div class="callout">
+  <span class="label">Do the maths once</span>
+  <p>A full-frame sensor has the 1.6× crop factor squared, about 2.6×, the area of APS-C.<sup class="cite"><a href="#s6">6</a></sup> 2.6× the light is about <strong>1⅓ stops</strong>, so at the same settings full frame shows roughly the noise of an APS-C body set 1⅓ stops lower. That's one real input to the full frame vs APS-C question in phase 3. (Your 17-55 is an EF-S lens made for APS-C, which is part of that question too.)</p>
+</div>
+
+<p>For the night sky, National Park Service rangers suggest the widest aperture your lens has, ISO starting around 400 and raised as needed, and 10–20 second exposures.<sup class="cite"><a href="#s7">7</a></sup> Another NPS guide suggests starting near 14 seconds and adjusting from your test shots.<sup class="cite"><a href="#s8">8</a></sup> Both say results depend on your camera and lens, so how good a camera is at high ISO decides how far you can push. Night skies get their own lesson later.</p>
+
+<h2>3 · Check yourself</h2>
+<p>Seven questions: five new, and two from your review list (metering, and exposure simulation from lesson 0002).</p>
+
+<div class="quiz" data-quiz="quiz-data" data-lesson="0003"></div>
+<script type="application/json" id="quiz-data">
+[
+  {
+    "topic": "AF for moving subjects",
+    "q": "Dusk, and an elk is walking along the edge of a meadow. Which autofocus setup fits best?",
+    "options": ["One-Shot AF, centre point", "Manual focus, then wait", "Servo AF with tracking", "One-Shot AF with tracking"],
+    "answer": 2,
+    "explain": "Servo AF keeps focusing while the subject moves, and tracking keeps the AF point on it. One-Shot locks focus once, which suits still subjects. <a href=\"#s3\">[3]</a> <a href=\"#s2\">[2]</a>"
+  },
+  {
+    "topic": "Subject detection",
+    "q": "A camera's manual says animal detection covers <strong>dogs, cats and birds</strong>. You point it at a bighorn sheep. The sheep…",
+    "options": ["Is always detected first", "May not be detected", "Blocks the shutter release", "Triggers vehicle detection instead"],
+    "answer": 1,
+    "explain": "Detection is only promised for what the manual lists. It might still find the sheep, but don't count on it: check the camera's list, and know how to move an AF point or zone yourself as a fallback. <a href=\"#s2\">[2]</a>"
+  },
+  {
+    "topic": "Focusing on stars",
+    "q": "You're set up for the Milky Way on a tripod. What's the most reliable way to focus?",
+    "options": ["Eye-detection AF on stars", "Servo AF, brightest star", "Higher ISO for autofocus", "Manual focus, zoomed view"],
+    "answer": 3,
+    "explain": "Autofocus struggles with night scenes and points of light. Magnify the view on a bright star and focus by hand until it's as small as it gets. <a href=\"#s2\">[2]</a>"
+  },
+  {
+    "topic": "Reading ISO specs",
+    "q": "Camera A's ISO range tops out at 102400, camera B's at 51200. What does that tell you about their noise at <strong>ISO 6400</strong>?",
+    "options": ["Almost nothing by itself", "A is cleaner, guaranteed", "B is cleaner, guaranteed", "They're identical at 6400"],
+    "answer": 0,
+    "explain": "Noise depends mostly on how much light the sensor collects, so sensor size and design matter more than where the menu stops. Compare test images at the ISO you'll actually use. <a href=\"#s5\">[5]</a> <a href=\"#s4\">[4]</a>"
+  },
+  {
+    "topic": "Sensor size and noise",
+    "q": "Same f-number, shutter speed and framing. Compared with a 1.6× APS-C sensor, how much more light does a full-frame sensor collect?",
+    "options": ["About ⅓ stop more", "About 1⅓ stops more", "About 3 stops more", "Exactly the same amount"],
+    "answer": 1,
+    "explain": "Area scales with the crop factor squared: 1.6 × 1.6 ≈ 2.6× the light, and 2.6× is about 1⅓ stops (2× is one stop, 4× is two). More light means less visible noise. <a href=\"#s5\">[5]</a> <a href=\"#s6\">[6]</a>"
+  },
+  {
+    "topic": "Metering (review)",
+    "q": "A family portrait in front of a sunlit snowfield, on automatic exposure. Faces come out dark and the snow looks grey. What's the quickest fix?",
+    "options": ["Add minus compensation", "Lower the ISO", "Add plus compensation", "Use faster shutter"],
+    "answer": 2,
+    "explain": "The meter pulls the bright scene toward middle grey, which darkens everything. Plus compensation brings back white snow and properly exposed faces. With exposure simulation on, you'd see that in the viewfinder before shooting. <a href=\"#s9\">[9]</a>"
+  },
+  {
+    "topic": "Exposure simulation (review)",
+    "q": "You want the viewfinder to <strong>show</strong> that a shot will come out too dark before you take it. Which setting must be on?",
+    "options": ["Eye detection", "Subject tracking", "Noise reduction", "Exposure simulation"],
+    "answer": 3,
+    "explain": "With exposure simulation enabled, viewfinder brightness follows your settings. With it disabled, the view stays at standard brightness whatever you set. <a href=\"#s10\">[10]</a>"
+  }
+]
+</script>
+
+<h2>What this means for buying</h2>
+<p>The <a href="../reference/modern-camera-tech.html">Modern camera tech</a> sheet now has the full checklist. Add three checks: which subjects the camera detects (does "animals" go beyond pets and birds?), whether it has eye detection, and its <em>sensor size</em>, with test images at ISO 3200–6400 rather than the top ISO figure. Next is phase 3: choosing the camera.</p>
+
+<div class="callout">
+  <span class="label">Primary source</span>
+  <p><a href="https://cam.start.canon/en/C004/manual/html/UG-04_AF-Drive_0050.html">Canon EOS R6 manual: Selecting the AF Method</a> is the clearest manufacturer description of tracking, subject detection and eye detection, including what they can't do. Most brands' manuals have a similar page.</p>
+</div>
+
+<div class="callout">
+  <span class="label">Ask me</span>
+  <p>Questions about any of this, or about a specific camera's autofocus? Ask me in the chat. When you're done, paste me the quiz result line.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://en.wikipedia.org/wiki/Canon_EOS_30D">Wikipedia: Canon EOS 30D</a>: 9 AF points; One-Shot, AI Servo, AI Focus; ISO 100–3200. See also <a href="https://global.canon/en/c-museum/product/dslr792.html">Canon Camera Museum: EOS 30D</a> (9-point AF).</li>
+  <li id="s2"><a href="https://cam.start.canon/en/C004/manual/html/UG-04_AF-Drive_0050.html">Canon EOS R6 manual: Selecting the AF Method</a>: Face + Tracking, subject to detect, eye detection, difficult focusing conditions.</li>
+  <li id="s3"><a href="https://cam.start.canon/en/C004/manual/html/UG-04_AF-Drive_0040.html">Canon EOS R6 manual: AF Operation</a>: One-Shot vs Servo AF.</li>
+  <li id="s4"><a href="https://cam.start.canon/en/C004/manual/html/UG-03_Shooting-1_0060.html">Canon EOS R6 manual: ISO Speed Settings</a>: ISO 100–102400, expandable to H (204800), with noise caveats.</li>
+  <li id="s5"><a href="https://en.wikipedia.org/wiki/Image_noise">Wikipedia: Image noise</a>: light collected over the whole sensor is the largest factor; larger sensors collect more at the same f-number.</li>
+  <li id="s6"><a href="https://en.wikipedia.org/wiki/Crop_factor">Wikipedia: Crop factor</a>: APS-C 1.6× relative to full frame.</li>
+  <li id="s7"><a href="https://www.nps.gov/articles/000/night-skies-photography-acadia.htm">NPS (Acadia): Night skies photography</a>: widest aperture, ISO from 400 upward, 10–20 s.</li>
+  <li id="s8"><a href="https://www.nps.gov/juba/blogs/dark-sky-photography-tips-and-tricks-for-finding-your-night-sky.htm">NPS: Dark Sky Photography tips</a>: start around 14 s and adjust; settings vary by camera.</li>
+  <li id="s9"><a href="https://en.wikipedia.org/wiki/Middle_gray">Wikipedia: Middle gray</a> and <a href="https://en.wikipedia.org/wiki/Exposure_compensation">Exposure compensation</a>.</li>
+  <li id="s10"><a href="https://cam.start.canon/en/C004/manual/html/UG-03_Shooting-1_0350.html">Canon EOS R6 manual: Exposure Simulation</a>.</li>
+</ol>
+
+<nav class="lesson-nav">
+  <a href="0002-see-it-before-you-shoot.html">← 0002 · See it before you shoot</a>
+  <a href="0004-back-from-2013.html">Next: 0004 · Back from 2013 →</a>
+</nav>
+
+</main>
+<script src="../assets/quiz.js" defer></script>
+</body>
+</html>
