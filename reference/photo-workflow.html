@@ -10,6 +10,7 @@
   .flow .box { fill: var(--card); stroke: var(--rule); stroke-width: 1.5; }
   .flow .box.lib { fill: var(--accent-soft); stroke: var(--accent); }
   .flow .box.arc { stroke: var(--fg); }
+  .flow .box.temp { fill: var(--bg); stroke: var(--muted); stroke-dasharray: 2 4; }
   .flow .title { font: 600 15px var(--sans); fill: var(--fg); }
   .flow .sub { font: 12px var(--sans); fill: var(--muted); }
   .flow .lbl { font: italic 12px var(--serif); fill: var(--muted); }
@@ -36,7 +37,7 @@
 
 <svg class="flow" viewBox="0 0 600 600" role="img" aria-labelledby="flow-title flow-desc">
   <title id="flow-title">Photo workflow diagram</title>
-  <desc id="flow-desc">Camera Originals go to the Archive on OneDrive, are edited in the Darkroom, exported to the Outbox and uploaded to the Library in Google Photos at original quality. Phone photos upload straight to the Library and are edited there. During the trip, a few camera JPEGs reach the Library via the phone temporarily.</desc>
+  <desc id="flow-desc">Camera Originals go to the Archive on OneDrive, are edited in the Darkroom, exported to the Outbox and uploaded to the Library in Google Photos at original quality. Phone photos upload straight to the Library and are edited there. During the trip, a few camera JPEGs reach the Library via the phone; they are collected in a temporary album and deleted once their Edits are uploaded, so no moment appears twice.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head" d="M0,0 L10,5 L0,10 z"/></marker>
     <marker id="ah-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head acc" d="M0,0 L10,5 L0,10 z"/></marker>
@@ -100,6 +101,13 @@
   <path class="arrow" d="M492 278 H518" />
   <text class="lbl" x="410" y="326" text-anchor="middle">phone photos only,</text>
   <text class="lbl" x="410" y="342" text-anchor="middle">never the Darkroom</text>
+  <!-- Trip JPEGs: temporary album, deleted after the Edits are uploaded -->
+  <rect class="box temp" x="290" y="380" width="210" height="62" rx="8"/>
+  <text class="title" x="395" y="402" text-anchor="middle">Album "Trip – temporary"</text>
+  <text class="sub" x="395" y="419" text-anchor="middle">the camera JPEGs from the phone</text>
+  <text class="sub" x="395" y="434" text-anchor="middle">delete all once the Edits are in</text>
+  <path class="arrow temp" d="M395 442 V478" marker-end="url(#ah-mut)"/>
+  <text class="lbl" x="403" y="465">an album inside the Library</text>
 </svg>
 
 <div class="legend">
@@ -113,7 +121,7 @@
   <li><strong>Phone photos never leave the Library.</strong> They are edited only in Google Photos' own editor. The Darkroom is for camera RAW files only.</li>
   <li><strong>The Archive holds camera Originals only</strong> (RAW + in-camera JPEG), one folder per trip or date. The Darkroom reads only from there and is never connected to Google Photos.</li>
   <li><strong>Edits flow one way:</strong> Darkroom → Outbox → Library. Upload only the picks, then empty the Outbox. An Edit never goes back into the Archive or the Darkroom.</li>
-  <li><strong>Trip JPEGs are temporary:</strong> the few camera JPEGs sent to the phone during the trip are deleted from the Library once their Edits are uploaded. A manual step, done in one batch after the trip.</li>
+  <li><strong>Trip JPEGs are temporary:</strong> camera JPEGs sent to the phone also get backed up to the Library, so after the trip the same moment would appear twice (JPEG + Edit). Each evening, add the JPEGs you sent to the album <em>"Trip – temporary"</em>. After the trip, once the Edits are uploaded, open that album, select all and delete. One manual step. Check on the first evening whether the received JPEGs keep the camera's capture time, and whether deleting in Google Photos also deletes from the iPhone.</li>
   <li><strong>One clock:</strong> set the camera's date, time and time zone to match your phone before each trip, and when you change time zone. Exports keep their capture time.</li>
 </ol>
 
