@@ -61,7 +61,7 @@ The file as the camera or phone first wrote it (RAW, in-camera JPEG, or phone HE
 _Avoid_: source, master, raw (for non-RAW originals)
 
 **Archive**:
-The cloud folder that holds every Original that went through the Darkroom: all camera Originals, plus the few phone Originals chosen for a Darkroom detour.
+The cloud folder that holds all camera Originals, one folder per trip or date. Phone photos are not part of it.
 _Avoid_: backup, storage, dump
 
 **Darkroom**:
@@ -77,12 +77,8 @@ The temporary folder an Edit lands in on export, emptied once its contents are i
 _Avoid_: export folder, staging
 
 **Library**:
-The single home of all finished photos (phone photos as taken, plus Edits), where people are found and albums made. In this course it's Google Photos.
+The single home of all finished photos (phone photos, edited in place, plus Edits), where people are found and albums made. In this course it's Google Photos.
 _Avoid_: archive, collection, cloud
-
-**Darkroom detour**:
-Taking a phone photo out of the Library into the Archive for Darkroom editing, then replacing its unedited version in the Library with the Edit.
-_Avoid_: round trip, re-import
 
 ## Files
 

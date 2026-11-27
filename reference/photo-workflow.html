@@ -36,7 +36,7 @@
 
 <svg class="flow" viewBox="0 0 600 600" role="img" aria-labelledby="flow-title flow-desc">
   <title id="flow-title">Photo workflow diagram</title>
-  <desc id="flow-desc">Camera Originals go to the Archive on OneDrive, are edited in the Darkroom, exported to the Outbox and uploaded to the Library in Google Photos. Phone photos upload straight to the Library. A Darkroom detour takes selected phone Originals from the Library to the Archive. During the trip, a few camera JPEGs reach the Library via the phone temporarily.</desc>
+  <desc id="flow-desc">Camera Originals go to the Archive on OneDrive, are edited in the Darkroom, exported to the Outbox and uploaded to the Library in Google Photos at original quality. Phone photos upload straight to the Library and are edited there. During the trip, a few camera JPEGs reach the Library via the phone temporarily.</desc>
   <defs>
     <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head" d="M0,0 L10,5 L0,10 z"/></marker>
     <marker id="ah-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head acc" d="M0,0 L10,5 L0,10 z"/></marker>
@@ -56,7 +56,7 @@
   <rect class="box arc" x="30" y="130" width="200" height="74" rx="8"/>
   <text class="title" x="130" y="154" text-anchor="middle">Archive</text>
   <text class="sub" x="130" y="172" text-anchor="middle">OneDrive · Originals</text>
-  <text class="sub" x="130" y="190" text-anchor="middle">camera/&lt;trip&gt; · phone/</text>
+  <text class="sub" x="130" y="190" text-anchor="middle">camera only · per trip/date</text>
 
   <!-- Darkroom -->
   <rect class="box" x="30" y="258" width="200" height="56" rx="8"/>
@@ -71,8 +71,8 @@
   <!-- Library -->
   <rect class="box lib" x="30" y="480" width="540" height="96" rx="10"/>
   <text class="title" x="300" y="510" text-anchor="middle">Library · Google Photos</text>
-  <text class="sub" x="300" y="532" text-anchor="middle">every finished photo: phone photos as taken + Edits</text>
-  <text class="sub" x="300" y="552" text-anchor="middle">people search · albums · one timeline · quick edits in-app</text>
+  <text class="sub" x="300" y="532" text-anchor="middle">every finished photo: phone photos + camera Edits</text>
+  <text class="sub" x="300" y="552" text-anchor="middle">people search · albums · one timeline · backup quality: Original</text>
 
   <!-- Main camera flow -->
   <path class="arrow" d="M130 76 V128" marker-end="url(#ah)"/>
@@ -93,32 +93,35 @@
   <text class="lbl" x="299" y="33" text-anchor="middle">trip: a few JPEGs</text>
   <text class="lbl" x="299" y="56" text-anchor="middle">(Camera Connect)</text>
 
-  <!-- Darkroom detour: Library back to Archive/phone, one photo at a time -->
-  <path class="arrow dash" d="M440 478 V170 H232" marker-end="url(#ah-acc)"/>
-  <text class="lbl acc" x="336" y="160" text-anchor="middle">Darkroom detour</text>
-  <text class="lbl" x="336" y="192" text-anchor="middle">"To darkroom" album →</text>
-  <text class="lbl" x="336" y="208" text-anchor="middle">download the Original</text>
+  <!-- Phone photos are edited inside the Library -->
+  <rect class="box" x="330" y="250" width="160" height="56" rx="8"/>
+  <text class="title" x="410" y="274" text-anchor="middle">Edit in-app</text>
+  <text class="sub" x="410" y="292" text-anchor="middle">Google Photos editor</text>
+  <path class="arrow" d="M492 278 H518" />
+  <text class="lbl" x="410" y="326" text-anchor="middle">phone photos only,</text>
+  <text class="lbl" x="410" y="342" text-anchor="middle">never the Darkroom</text>
 </svg>
 
 <div class="legend">
   <span>one-way flow</span>
-  <span class="l-dash">Darkroom detour (deliberate, in batches)</span>
   <span class="l-temp">temporary, during the trip</span>
 </div>
 
 <h2>The rules</h2>
 <ol>
-  <li><strong>The Library is home.</strong> Every finished photo ends up in Google Photos, where people are found and albums are made.</li>
-  <li><strong>Phone photos stay in the Library.</strong> Fix them in Google Photos' own editor. Only the few that deserve more take the <em>Darkroom detour</em>.</li>
-  <li><strong>The Darkroom only reads the Archive.</strong> It is never connected to Google Photos.</li>
-  <li><strong>Edits flow one way:</strong> Darkroom → Outbox → Library. Then empty the Outbox. An Edit never goes back into the Archive or the Darkroom.</li>
-  <li><strong>No duplicates:</strong> after uploading an Edit, delete the unedited version from the Library (its Original is safe in the Archive). This is a manual step, done in batches. The trip JPEGs are replaced the same way.</li>
+  <li><strong>The Library is home.</strong> Every finished photo ends up in Google Photos, where people are found and albums are made. Backup quality stays on <em>Original quality</em> ("back up with no change to quality"), not <em>Storage saver</em>, which compresses photos to 16 MP.</li>
+  <li><strong>Phone photos never leave the Library.</strong> They are edited only in Google Photos' own editor. The Darkroom is for camera RAW files only.</li>
+  <li><strong>The Archive holds camera Originals only</strong> (RAW + in-camera JPEG), one folder per trip or date. The Darkroom reads only from there and is never connected to Google Photos.</li>
+  <li><strong>Edits flow one way:</strong> Darkroom → Outbox → Library. Upload only the picks, then empty the Outbox. An Edit never goes back into the Archive or the Darkroom.</li>
+  <li><strong>Trip JPEGs are temporary:</strong> the few camera JPEGs sent to the phone during the trip are deleted from the Library once their Edits are uploaded. A manual step, done in one batch after the trip.</li>
   <li><strong>One clock:</strong> set the camera's date, time and time zone to match your phone before each trip, and when you change time zone. Exports keep their capture time.</li>
 </ol>
 
+<p class="meta">A tip from a working photographer: decide per trip or event whether it's mainly a camera or mainly a phone occasion. Editing in Google Photos takes seconds; in the Darkroom, minutes per photo.</p>
+
 <div class="callout">
   <span class="label">Check once</span>
-  <p>After your first Edit, check that Google Photos puts it at the right moment in your timeline. Whether Lightroom or darktable keep the capture time on export couldn't be confirmed from their documentation in this course. Also check that face recognition works for your account: in Google Photos, open Search and look for a row of faces. Wikipedia notes it is only available in some countries.</p>
+  <p>After your first Edit, check that Google Photos puts it at the right moment in your timeline. Whether Lightroom or darktable keep the capture time on export couldn't be confirmed from their documentation in this course. Also check that face recognition works for your account (Google Photos → Search → a row of faces; Wikipedia notes it is only available in some countries), and that an uploaded Edit keeps its full resolution.</p>
 </div>
 
 <p>Original, Archive, Darkroom, Edit, Outbox and Library are defined in the course glossary (GLOSSARY.md).</p>
@@ -128,7 +131,6 @@
 <ol class="sources">
   <li><a href="https://cam.start.canon/en/C004/manual/html/UG-06_Network_0040.html">Canon EOS R6 manual: Connecting to a Smartphone</a>: sending images to a phone with Camera Connect.</li>
   <li><a href="https://en.wikipedia.org/wiki/Google_Photos">Wikipedia: Google Photos</a>: face grouping (availability varies by country).</li>
-  <li><a href="https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format">Wikipedia: HEIF</a>: Lightroom and darktable open HEIC files.</li>
 </ol>
 
 <nav class="lesson-nav">
