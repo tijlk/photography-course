@@ -70,10 +70,11 @@
   <text class="sub" x="130" y="410" text-anchor="middle">temporary · emptied after upload</text>
 
   <!-- Library -->
-  <rect class="box lib" x="30" y="480" width="540" height="96" rx="10"/>
+  <rect class="box lib" x="30" y="480" width="540" height="108" rx="10"/>
   <text class="title" x="300" y="510" text-anchor="middle">Library · Google Photos</text>
   <text class="sub" x="300" y="532" text-anchor="middle">every finished photo: phone photos + camera Edits</text>
-  <text class="sub" x="300" y="552" text-anchor="middle">people search · albums · one timeline · backup quality: Original</text>
+  <text class="sub" x="300" y="552" text-anchor="middle">phone photos edited here, in the Google Photos editor (never the Darkroom)</text>
+  <text class="sub" x="300" y="572" text-anchor="middle">people search · albums · one timeline · backup quality: Original</text>
 
   <!-- Main camera flow -->
   <path class="arrow" d="M130 76 V128" marker-end="url(#ah)"/>
@@ -87,25 +88,20 @@
 
   <!-- Phone straight to Library -->
   <path class="arrow" d="M520 76 V478" marker-end="url(#ah)"/>
-  <text class="lbl" x="528" y="300" transform="rotate(90 528 300)" text-anchor="middle">auto-upload</text>
+  <text class="lbl" x="528" y="260" transform="rotate(90 528 260)" text-anchor="middle">phone photos: auto-upload</text>
 
   <!-- Trip: camera JPEGs via Camera Connect to the phone (temporary) -->
   <path class="arrow temp" d="M230 40 H368" marker-end="url(#ah-mut)"/>
-  <text class="lbl" x="299" y="33" text-anchor="middle">trip: a few JPEGs</text>
+  <text class="lbl" x="299" y="33" text-anchor="middle">trip: camera JPEGs</text>
   <text class="lbl" x="299" y="56" text-anchor="middle">(Camera Connect)</text>
 
-  <!-- Phone photos are edited inside the Library -->
-  <rect class="box" x="330" y="250" width="160" height="56" rx="8"/>
-  <text class="title" x="410" y="274" text-anchor="middle">Edit in-app</text>
-  <text class="sub" x="410" y="292" text-anchor="middle">Google Photos editor</text>
-  <path class="arrow" d="M492 278 H518" />
-  <text class="lbl" x="410" y="326" text-anchor="middle">phone photos only,</text>
-  <text class="lbl" x="410" y="342" text-anchor="middle">never the Darkroom</text>
   <!-- Trip JPEGs: temporary album, deleted after the Edits are uploaded -->
   <rect class="box temp" x="290" y="380" width="210" height="62" rx="8"/>
   <text class="title" x="395" y="402" text-anchor="middle">Album "Trip – temporary"</text>
-  <text class="sub" x="395" y="419" text-anchor="middle">the camera JPEGs from the phone</text>
+  <text class="sub" x="395" y="419" text-anchor="middle">camera JPEGs sent to the phone</text>
   <text class="sub" x="395" y="434" text-anchor="middle">delete all once the Edits are in</text>
+  <path class="arrow temp" d="M505 76 V411 H502" marker-end="url(#ah-mut)"/>
+  <text class="lbl" x="495" y="240" transform="rotate(90 495 240)" text-anchor="middle">camera JPEGs: auto-upload</text>
   <path class="arrow temp" d="M395 442 V478" marker-end="url(#ah-mut)"/>
   <text class="lbl" x="403" y="465">an album inside the Library</text>
 </svg>
