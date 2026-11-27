@@ -54,6 +54,36 @@ _Avoid_: AI Servo (Canon's older name), AF-C (other brands)
 Autofocus that recognises a subject type (people, certain animals, vehicles), finds its face or eye, and tracks it. It covers only the subjects the camera's manual lists.
 _Avoid_: eye-AF (that's one part of it), smart AF
 
+## Workflow
+
+**Original**:
+The file as the camera or phone first wrote it (RAW, in-camera JPEG, or phone HEIC). It is never overwritten.
+_Avoid_: source, master, raw (for non-RAW originals)
+
+**Archive**:
+The cloud folder that holds every Original that went through the Darkroom: all camera Originals, plus the few phone Originals chosen for a Darkroom detour.
+_Avoid_: backup, storage, dump
+
+**Darkroom**:
+The desktop RAW editor (Lightroom or darktable). It reads only from the Archive.
+_Avoid_: editor (ambiguous with in-app phone editing), catalog
+
+**Edit**:
+A finished photo exported from the Darkroom. It lives only in the Library and is never fed back into the Darkroom.
+_Avoid_: export (that's the action, not the thing), version, copy
+
+**Outbox**:
+The temporary folder an Edit lands in on export, emptied once its contents are in the Library.
+_Avoid_: export folder, staging
+
+**Library**:
+The single home of all finished photos (phone photos as taken, plus Edits), where people are found and albums made. In this course it's Google Photos.
+_Avoid_: archive, collection, cloud
+
+**Darkroom detour**:
+Taking a phone photo out of the Library into the Archive for Darkroom editing, then replacing its unedited version in the Library with the Edit.
+_Avoid_: round trip, re-import
+
 ## Files
 
 **RAW**:
